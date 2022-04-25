@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import MainContent from './components/MainContent';
+import SideContent from './components/SideContent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <div className='allContent'>
+        <div className='content'>
+          <MainContent title = "Mon 1er article" description = "Sujet de mon article" text = "hdjbfhgsbdfkghblshgbdfhbgdlsfhgbdhlsfbghfbghdfbgdfhbglhdfbghjdfb  gbdfbhfb gdf   bfdhgb fhg bdfhjbg hfbg hfbg dfhbg df bdkjf gbdfbg dhfbghdfb hfdbg bhb dfgn dkjfgndfjn gjdfng kjdfngkjfen kjgfndfg"/>
+          <MainContent title = "Mon 2eme article" description = "Sujet de mon article" text = "hdjbfhgsbdfkghblshgbdfhbgdlsfhgbdhlsfbghfbghdfbgdfhbglhdfbghjdfb  gbdfbhfb gdf   bfdhgb fhg bdfhjbg hfbg hfbg dfhbg df bdkjf gbdfbg dhfbghdfb hfdbg bhb dfgn dkjfgndfjn gjdfng kjdfngkjfen kjgfndfg"/>
+        </div>
+        <div className="sideContent">
+        <SideContent/>
+        </div>
+      </div>
+      <Footer tech = "React" society = "Le Reacteur" name = "Clément"/>
     </div>
   );
 }
